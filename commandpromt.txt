@@ -1,0 +1,72 @@
+
+Training_M5.06.17@M5-D-6L66NK2 MINGW64 ~/git-playground/sample-project (master)
+$ git checkout develop
+Switched to branch 'develop'
+Your branch is behind 'origin/develop' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Training_M5.06.17@M5-D-6L66NK2 MINGW64 ~/git-playground/sample-project (develop)
+$ git log --oneline --graph
+* 670e16c (HEAD -> develop, master) added home page for Acc
+* 5fb6d75 Initial commit
+
+Training_M5.06.17@M5-D-6L66NK2 MINGW64 ~/git-playground/sample-project (develop)
+$ git pull
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/sourabhsoni94/sampleproject
+   e47fd75..db38420  develop    -> origin/develop
+   c20b033..0f411e3  master     -> origin/master
+Updating 670e16c..db38420
+Fast-forward
+ ContactUs.html | 4 ++++
+ GetthePulldata | 4 ++++
+ 2 files changed, 8 insertions(+)
+ create mode 100644 ContactUs.html
+ create mode 100644 GetthePulldata
+
+Training_M5.06.17@M5-D-6L66NK2 MINGW64 ~/git-playground/sample-project (develop)
+$ git log --oneline --graph
+* db38420 (HEAD -> develop, origin/develop) getting a pull data
+* e47fd75 Adding a contact page
+* 670e16c (master) added home page for Acc
+* 5fb6d75 Initial commit
+
+Training_M5.06.17@M5-D-6L66NK2 MINGW64 ~/git-playground/sample-project (develop)
+$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 4 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Training_M5.06.17@M5-D-6L66NK2 MINGW64 ~/git-playground/sample-project (master)
+$ git log --oneline --graph
+* 670e16c (HEAD -> master) added home page for Acc
+* 5fb6d75 Initial commit
+
+Training_M5.06.17@M5-D-6L66NK2 MINGW64 ~/git-playground/sample-project (master)
+$ git merge origin/master
+Updating 670e16c..0f411e3
+Fast-forward
+ ContactUs.html | 4 ++++
+ GetthePulldata | 4 ++++
+ 2 files changed, 8 insertions(+)
+ create mode 100644 ContactUs.html
+ create mode 100644 GetthePulldata
+
+Training_M5.06.17@M5-D-6L66NK2 MINGW64 ~/git-playground/sample-project (master)
+$ git log --oneline --graph
+*   0f411e3 (HEAD -> master, origin/master) Merge pull request #2 from sourabhsoni94/develop
+|\
+| * db38420 (origin/develop, develop) getting a pull data
+* |   c20b033 Merge pull request #1 from sourabhsoni94/develop
+|\ \
+| |/
+| * e47fd75 Adding a contact page
+|/
+* 670e16c added home page for Acc
+* 5fb6d75 Initial commit
+
+Training_M5.06.17@M5-D-6L66NK2 MINGW64 ~/git-playground/sample-project (master)
+$

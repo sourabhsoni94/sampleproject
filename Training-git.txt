@@ -1,0 +1,114 @@
+Git : version controll tool
+git-scm.com
+1 ) Configuration managment: 
+2)  commands : git add , git commit    
+     any command help    -  git <any command> --help
+.gitconfig    this file avialable at (type '.' in run)
+
+repository - is location to store all files.
+pwd - to see current directory
+
+
+git config -- local
+           -- global
+           -- sytem  (applicable for all users)
+
+ ls -a (to see content of folder)
+
+empty git repository
+git init  
+[Training_M5.06.17@M5-D-6L66NK2 MINGW64 ~/git-playground/sample-project (master)]
+ master branch
+
+ ls -a.git
+Head : pointer that shows at which branch we are   (based on commit id 40 character)        
+
+README.mf
+
+
+gitignore (we should never pull libraries . only source code , so aviod using gitignore)
+
+
+ echo "#SAMPLE PROJECT" >> README.md
+
+git status  (to know which files are changed , they can be committed)
+
+git commit -m  (-m means any meaningful message)
+
+$ git commit -m "Initial commit"
+[master (root-commit) 5fb6d75] Initial commit
+ 2 files changed, 3 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 gitignore [means what we changed is commit]
+
+$ git log
+commit 5fb6d752c449cf44f43e9e54d1ad51c669f7d65b (HEAD -> master)
+Author: Sourabh <s.c.soni@accenture.com>
+Date:   Fri Jan 12 11:20:06 2018 +0530
+
+
+-----------------------------------------------------------------------------------------------------
+
+to put files on Remote host
+they are cloud repository  
+github -
+bitbuckets - allows private repository also
+gitblit - it is a visual repository of the GIT repository
+
+sourabhsoni94
+9039339547S_s    -pass
+
+Connect local rep to Remote rep: 
+git remote add origin https://github.com/sourabhsoni94/sampleproject.git
+
+$ git remote -v
+origin  https://github.com/sourabhsoni94/sampleproject.git (fetch)
+origin  https://github.com/sourabhsoni94/sampleproject.git (push)
+
+origin name can be changed - so that we can push or get from any repository
+
+
+git push -u origin master
+
+git push -u : to create remote branch which is in synced with local branch ex. master  sync will happen at push and pull commands
+ 
+pushing to cloud
+
+--------------------------
+
+Branching  
+
+git branch develop   : create branch but not move to new branch
+so use
+git checkout -b
+<name>
+
+git checkout master : to go to master branch
+ it is checking that our master branch is synced with local or not   , tracking branch 
+
+push develop to remote rep
+git push <remote-name> <branch-name>  
+
+
+$ git branch -a : to see how many branch 
+
+we take work done in develop and merge it with master
+-----------------------------
+
+
+==========================================
+git log --oneline--graph
+
+pull -
+
+fast-merge
+3 way merge 
+no ff
+Rebase : 
+
+-------------------------------------------------
+Forking : we can clone someone els's rep 
+
+get a copy of someone eles's project  
+
+cd ..  to 
