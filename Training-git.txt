@@ -111,4 +111,13 @@ Forking : we can clone someone els's rep
 
 get a copy of someone eles's project  
 
-cd ..  to 
+cd ..  
+
+
+-------------------------------------------------
+
+git diff master develop : to find the diff bet two branch all files
+
+-------------------------------------------------
+
+git bisect : to find where is the error (in which commit)
