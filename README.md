@@ -1,2 +1,1 @@
-#SAMPLE PROJECT
-#SAMPLE PROJECT
+## Git Hub practice Project
